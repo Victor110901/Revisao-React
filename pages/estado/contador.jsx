@@ -1,9 +1,13 @@
+import { useState } from "react"
+
 export default function contador() {
+    let [valor, setValor] = useState(0);
+
     return (
         <div>
-            <div>Valor: ???</div>
-            <button>-</button>
-            <button>+</button>
+            <div>Valor: {valor}</div>
+            <button onClick={() => setValor(valor - 1)}>-</button>
+            <button onClick={() => setValor(valor + 1)}>+</button>
         </div>
     )
 }
