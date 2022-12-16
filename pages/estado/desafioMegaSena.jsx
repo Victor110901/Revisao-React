@@ -36,7 +36,7 @@ export default function desafioMegaSena() {
                 {numeros}
             </span>
             <input type="number" onChange={(e) => setQuantidade(e.target.value)}/>
-            <button onClick={() => console.log(mega())}>Gerar</button>
+            <button onClick={() => mega()}>Gerar</button>
         </div>
     )
 }
