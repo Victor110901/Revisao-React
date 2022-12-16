@@ -1,5 +1,5 @@
 import { useState } from "react"
-import ContadorDisplay from "../../components/ContadorDisplay"
+import NumeroDisplay from "../../components/NumeroDisplay"
 
 export default function desafioMegaSena() {
     const [quantidade, setQuantidade] = useState(6)
@@ -14,7 +14,7 @@ export default function desafioMegaSena() {
     
         for(let i = 0; i < quantidade; i++) {
               array.push(
-                  <ContadorDisplay key={i} numero={gerarNumeros()}/>
+                  <NumeroDisplay key={i} numero={gerarNumeros()}/>
               )  
         }
 
